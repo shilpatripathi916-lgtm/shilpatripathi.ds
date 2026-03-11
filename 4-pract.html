@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable / Student Record</title>
+    <link rel="stylesheet" href="4-.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Timetable / Student Record</h1>
+
+        <!-- Table for displaying data -->
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">ID</th>
+                    <th onclick="sortTable(1)">Name</th>
+                    <th onclick="sortTable(2)">Course</th>
+                    <th onclick="sortTable(3)">Time</th>
+                    <th onclick="sortTable(4)">Days</th>
+                </tr>
+                <tr>
+                    <th><input type="text" id="filter-id" onkeyup="filterTable(0)" placeholder="Filter ID"></th>
+                    <th><input type="text" id="filter-name" onkeyup="filterTable(1)" placeholder="Filter Name"></th>
+                    <th><input type="text" id="filter-course" onkeyup="filterTable(2)" placeholder="Filter Course"></th>
+                    <th><input type="text" id="filter-time" onkeyup="filterTable(3)" placeholder="Filter Time"></th>
+                    <th><input type="text" id="filter-days" onkeyup="filterTable(4)" placeholder="Filter Days"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data Rows will be inserted dynamically using JavaScript -->
+            </tbody>
+        </table>
+
+        <!-- Pagination controls -->
+        <div class="pagination">
+            <button onclick="changePage(-1)">Prev</button>
+            <span id="page-number">Page 1</span>
+            <button onclick="changePage(1)">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

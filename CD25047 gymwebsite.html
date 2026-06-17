@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Power FitGym</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74') center/cover no-repeat;
+      height: 90vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-10px);
+      transition: 0.3s;
+    }
+
+    .trainer-img {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .bg-dark-custom {
+      background: #111;
+    }
+
+    .icon {
+      font-size: 40px;
+      color: #ff3d00;
+    }
+
+    footer {
+      background: #000;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Power FitGym</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#plans">Plans</a></li>
+        <li class="nav-item"><a class="nav-link" href="#trainers">Trainers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#programs">Programs</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="c:\Users\CCLab\Desktop\External Practical\Images\77.jpeg" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="c:\Users\CCLab\Desktop\External Practical\Images\78.jpeg" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<div class="c:\Users\CCLab\Desktop\External Practical\Images\80.jpeg" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <h1 class="display-3 fw-bold">Transform Your Body & Mind</h1>
+    <p class="lead">Join Power FitGym and start your fitness journey today</p>
+    <a href="#plans" class="btn btn-danger btn-lg mt-3">Join Now</a>
+  </div>
+</section>
+
+<!-- PLANS -->
+<section class="py-5" id="plans">
+  <div class="container text-center">
+    <h2 class="section-title">Membership Plans</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card plan-card shadow">
+          <div class="card-body">
+            <h4>Basic</h4>
+            <h2>₹999/mo</h2>
+            <p>Gym Access</p>
+            <p>1 Trainer Session</p>
+            <button class="btn btn-outline-danger">Choose Plan</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card plan-card shadow border-danger">
+          <div class="card-body">
+            <h4>Pro</h4>
+            <h2>₹1999/mo</h2>
+            <p>Gym + Cardio</p>
+            <p>5 Trainer Sessions</p>
+            <p>Diet Plan</p>
+            <button class="btn btn-danger">Most Popular</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card plan-card shadow">
+          <div class="card-body">
+            <h4>Elite</h4>
+            <h2>₹2999/mo</h2>
+            <p>All Access</p>
+            <p>Personal Trainer</p>
+            <p>Nutrition + Yoga</p>
+            <button class="btn btn-outline-danger">Choose Plan</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAINERS -->
+<section class="py-5 bg-light" id="trainers">
+  <div class="container text-center">
+    <h2 class="section-title">Expert Trainers</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883" class="card-img-top trainer-img">
+          <div class="card-body">
+            <h5>Rahul Sharma</h5>
+            <p>Strength Specialist</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba" class="card-img-top trainer-img">
+          <div class="card-body">
+            <h5>Neha Patil</h5>
+            <p>Yoga & Flexibility Coach</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61" class="card-img-top trainer-img">
+          <div class="card-body">
+            <h5>Amit Verma</h5>
+            <p>Fitness & Conditioning</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="py-5" id="programs">
+  <div class="container text-center">
+    <h2 class="section-title">Fitness Programs</h2>
+
+    <div class="row g-4">
+      <div class="col-md-3">
+        <i class="fa-solid fa-dumbbell icon"></i>
+        <h5 class="mt-3">Strength Training</h5>
+      </div>
+
+      <div class="col-md-3">
+        <i class="fa-solid fa-heart-pulse icon"></i>
+        <h5 class="mt-3">Cardio Fitness</h5>
+      </div>
+
+      <div class="col-md-3">
+        <i class="fa-solid fa-person-running icon"></i>
+        <h5 class="mt-3">Weight Loss</h5>
+      </div>
+
+      <div class="col-md-3">
+        <i class="fa-solid fa-spa icon"></i>
+        <h5 class="mt-3">Yoga & Wellness</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="py-5 bg-dark text-white" id="contact">
+  <div class="container">
+    <h2 class="text-center section-title">Online Inquiry</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email Address">
+          </div>
+
+          <div class="mb-3">
+            <input type="tel" class="form-control" placeholder="Phone Number">
+          </div>
+
+          <div class="mb-3">
+            <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+          </div>
+
+          <button class="btn btn-danger w-100">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-4 text-center">
+  <p class="mb-0">© 2026 Power FitGym. All Rights Reserved.</p>
+  <div>
+    <i class="fab fa-facebook mx-2"></i>
+    <i class="fab fa-instagram mx-2"></i>
+    <i class="fab fa-twitter mx-2"></i>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
